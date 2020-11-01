@@ -1,6 +1,6 @@
-const scrape_images = require('./bots/scrape_images.js');
+const scrape_images = require('./scrape_images.js');
 
-const paste_images = require('./bots/paste_images.js');
+const paste_images = require('./paste_images.js');
 
 async function iniciar(){
 
