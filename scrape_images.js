@@ -1,5 +1,5 @@
-const puppeteer = require('puppeteer');
-const fs = require('fs');
+const puppeteer = require('puppeteer')
+const fs = require('fs')
 
 
 //Robo acessa o site e captura o link das imagens do site
@@ -8,11 +8,11 @@ async function scrapeImages(){
     const browser = await puppeteer.launch({
     executablePath: 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe',
     headless:false,
-     });
+     })
 
-    const page = await browser.newPage();
+    const page = await browser.newPage()
 
-    await page.setViewport({ width: 1035, height: 768 });
+    await page.setViewport({ width: 1035, height: 768 })
 
     console.log('Acessando a página web...')
 
