@@ -1,5 +1,5 @@
-const puppeteer = require('puppeteer');
-const fs = require('fs');
+const puppeteer = require('puppeteer')
+const fs = require('fs')
 
 
 async function paste_images(){
@@ -12,7 +12,7 @@ async function paste_images(){
   await console.log('Iniciando browser...')
 
  // incicia browser
-  const page = await browser.newPage();
+  const page = await browser.newPage()
   // acessa o link da página descrita
 
   await console.log('Iniciando Navegação para a página...')
@@ -40,7 +40,7 @@ async function paste_images(){
       
  //Passa a string que está na variável data para json e coloca os dados na variável linkImg
 
-  const linkImg = await JSON.parse(data);
+  const linkImg = await JSON.parse(data)
 
   const clock = 500
       
@@ -104,7 +104,6 @@ async function paste_images(){
   }
   console.log('Finalizado!!!!!')
 
-};
+}
 
-paste_images()
-//module.exports = paste_images
+module.exports = paste_images
